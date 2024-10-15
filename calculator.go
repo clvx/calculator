@@ -1,5 +1,7 @@
 package calculator
 
+import "fmt"
+
 // create a function to calculate the sum of two numbers
 func add(x int, y int) int {
 	return x + y
@@ -17,8 +19,8 @@ func multiply(x int, y int) int {
 
 // create a function to divide two numbers
 func divide(x int, y int) (int, error) {
-    if y == 0 {
-        return 0, fmt.Errorf("cannot divide by zero")
-    }
-    return x / y, nil
+	if y == 0 {
+		return 0, fmt.Errorf("cannot divide by zero")
+	}
+	return x / y, nil
 }
